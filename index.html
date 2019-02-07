@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <title>BMI beregner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="minstil.css">
+    </head>
+    <body class="bg"> 
+        <div class="flex__container">
+            <form class="formular">
+                <fieldset>
+                    <legend>BMI beregner</legend>
+                    <div class="formelementer">
+                        <label for="alder" class="etiket">Alder:</label>
+                        <input type="number" class="indtastningsfelt" id="alder">
+                    </div>
+                    <div class="formelementer">
+                        <label for="vaegt" class="etiket">Vægt i kg:</label>
+                        <input type="number" class="indtastningsfelt" id="vaegt"> 
+                    </div>
+                    <div class="formelementer">
+                        <label for="hoejde" class="etiket">Højde i meter:</label>
+                        <input type="number" class="indtastningsfelt" step="0.01" id="hoejde">
+                    </div>
+                    <div class="formelementer">
+                        <label for="resultat" class="etiket">Resultat (BMI):</label>
+                        <input id="resultat" class="indtastningsfelt" placeholder="0.00" readonly>
+                    </div>
+                    <div class="formelementer">
+                        <label for="resultat" class="etiket">BMI Kategori:</label>
+                        <input id="resultat-vaegt" class="indtastningsfelt">
+                    </div>
+                    <div class="formelementer">
+                        <button type="button" id="beregn">Beregn BMI</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script src="mitjs.js"></script>
+    </body>
+</html>
